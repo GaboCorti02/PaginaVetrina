@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class Layer2 extends StatelessWidget {
+class Layer3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
         if (constraints.maxWidth > 1200) {
-          return Land2();
+          return Land3();
         } else if (constraints.maxWidth > 1000 && constraints.maxWidth < 1200) {
-          return Land2();
+          return Land3();
         } else {
-          return Land2Mobile();
+          return Land3Mobile();
         }
       },
     );
   }
 }
 
-class Land2 extends StatelessWidget {
+class Land3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -27,7 +27,14 @@ class Land2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             SelectableText(
-              "NASCITA DEL PROGETTO",
+              "Il nostro team ritiene che le stampanti 3D,\n"
+              "sempre più popolari tra le aziende ma ancora poco disponibili\n"
+              "tra i privati, possano seguire lo stesso percorso.\n"
+              "Sebbene avere una stampa 3D possa a prima vista\n"
+              "sembrare un inutile extra, ci sono moltissime occasioni in cui\n"
+              "essa può essere d’impiego per un privato: per esempio,\n"
+              "può essere possibile stampare piccoli pezzi di ricambio\n"
+              "di vecchi oggetti che non si trovano più sul mercato. ",
               style: TextStyle(
                   fontWeight: FontWeight.normal,
                   fontSize: 18.0,
@@ -36,12 +43,7 @@ class Land2 extends StatelessWidget {
             Row(
               children: <Widget>[
                 SelectableText(
-                  "L'ispirazione per il progetto SCANN3D nasce dall’analisi \n"
-                  "della diffusione della stampante tradizionale tra\n"
-                  "il pubblico: le stampanti, strumenti inizialmente presenti\n"
-                  "sono negli uffici, sono riuscite a riscuotere popolarità tra\n"
-                  "la gente comune tramite la diffusione di appositi centri di\n"
-                  "stampa, fino a diventare oggetti comuni in ciascuna casa.",
+                  "IMPIEGO",
                   style: TextStyle(
                       fontWeight: FontWeight.normal,
                       fontSize: 18.0,
@@ -56,7 +58,7 @@ class Land2 extends StatelessWidget {
   }
 }
 
-class Land2Mobile extends StatelessWidget {
+class Land3Mobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -64,7 +66,7 @@ class Land2Mobile extends StatelessWidget {
       child: Container(
         child: Column(children: <Widget>[
           SelectableText(
-            "NASCITA DEL PROGETTO",
+            "IMPIEGO",
             style: TextStyle(
                 fontWeight: FontWeight.normal,
                 fontSize: 18.0,
@@ -74,12 +76,14 @@ class Land2Mobile extends StatelessWidget {
             height: 20,
           ),
           SelectableText(
-            "L'ispirazione per il progetto SCANN3D nasce dall’analisi \n"
-            "della diffusione della stampante tradizionale tra\n"
-            "il pubblico: le stampanti, strumenti inizialmente presenti\n"
-            "sono negli uffici, sono riuscite a riscuotere popolarità tra\n"
-            "la gente comune tramite la diffusione di appositi centri di\n"
-            "stampa, fino a diventare oggetti comuni in ciascuna casa.",
+            "Il nostro team ritiene che le stampanti 3D,\n"
+            "sempre più popolari tra le aziende ma ancora poco disponibili\n"
+            "tra i privati, possano seguire lo stesso percorso.\n"
+            "Sebbene avere una stampa 3D possa a prima vista\n"
+            "sembrare un inutile extra, ci sono moltissime occasioni in cui\n"
+            "essa può essere d’impiego per un privato: per esempio,\n"
+            "può essere possibile stampare piccoli pezzi di ricambio\n"
+            "di vecchi oggetti che non si trovano più sul mercato. ",
             style: TextStyle(
                 fontWeight: FontWeight.normal,
                 fontSize: 18.0,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:web1/LandingPage/LandingPage.dart';
+import 'package:web1/LandingPage/Layer3.dart';
 import 'LandingPage/Layer2.dart';
+import 'LandingPage/Layer0.dart';
 import 'package:web1/Navbar/Navbar.dart';
 import 'LandingPage/Globals.dart' as global;
 
@@ -123,8 +125,25 @@ class MyHomePage extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         Navbar(),
+                        Layer0(),
                         LandingPage(),
-                        Layer2(),
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 10.0, vertical: 10),
+                          child: Container(
+                              height: 2.0,
+                              width: (MediaQuery.of(context).size.width * 70) /
+                                  100,
+                              color: Colors.white),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 45),
+                          child: Layer2(),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 45),
+                          child: Layer3(),
+                        ),
                       ],
                     ),
                   ),
